@@ -4,6 +4,8 @@ import BooksGrid from '../BooksGrid/BooksGrid.component'
 
 class Books extends Component {
     render() {
+        // console.log("inside bookauthor compo")
+        // console.log(this.props.books["J K Rowling"])
         return (
 
 
@@ -12,9 +14,8 @@ class Books extends Component {
             {
               this.props.authors.map((author, index) => {
                 return <BooksGrid
-                books={this.props.books.author} 
-                author={author}
-                
+                books={this.props.books[author]} 
+                author={author}                
                 key={index}
                 ></BooksGrid>
               })
