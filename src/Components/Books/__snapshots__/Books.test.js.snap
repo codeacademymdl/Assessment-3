@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Books renders correctly 1`] = `
+<div
+  className="book"
+>
+  <img
+    alt="book"
+    className="image"
+  />
+  <div
+    className="container"
+  >
+    <p
+      className="title"
+    />
+    <span />
+    <img
+      alt=""
+      className="heart"
+      onClick={[Function]}
+      src="heart-black.svg"
+    />
+  </div>
+</div>
+`;

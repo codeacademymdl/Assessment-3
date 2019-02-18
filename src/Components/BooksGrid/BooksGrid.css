@@ -31,3 +31,9 @@ align-content: center;
 flex-direction: row;
 
 }
+
+Books:nth-child(odd){
+
+    background-color:white;
+
+}
