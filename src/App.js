@@ -1,25 +1,44 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Books from './Components/Books/Books.component';
+
+import axios from 'axios';
+import BooksAuthor from './Components/BooksAuthor/BooksAuthor.component'
+
+
+
 
 class App extends Component {
+    
+
+
+    state = {
+        books: [],
+        author:[]
+    }
+
+    async componentDidMount() {
+
+        const booksFetched = await axios.get('http://localhost:8080/books');
+        
+        this.setState({
+            books: booksFetched.data,
+            author:Object.keys(booksFetched.data)
+
+        })
+        console.log(this.state)
+
+    }
+
+
   render() {
+     
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        
+      <div >
+     
+      <BooksAuthor authors={this.state.author} books={this.state.books}/>
+      
       </div>
     );
   }
