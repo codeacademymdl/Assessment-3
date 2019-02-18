@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 
-import BooksGrid from '../BooksGrid/BooksGrid.component' 
+import BooksGrid from '../BooksGrid/BooksGrid.component';
+import './booksAuthor.css'
 
-class Books extends Component {
+class BooksAuthor extends Component {
     render() {
         // console.log("inside bookauthor compo")
         // console.log(this.props.books["J K Rowling"])
@@ -10,7 +11,7 @@ class Books extends Component {
 
 
 
-            <div className="card_grid">
+            <div clasName="main">
             {
               this.props.authors.map((author, index) => {
                 return <BooksGrid
@@ -26,4 +27,4 @@ class Books extends Component {
     }
 }
 
-export default Books;
+export default BooksAuthor;

@@ -1,0 +1,36 @@
+.logo{
+
+
+    border-width:100%;
+    border-color:white;
+    border-style:solid;
+    border-radius: 50%; 
+    width:100%;
+
+}
+
+.sideDesign{
+      width: 40%;
+      height: 100px;
+      border-bottom: 10px solid black;
+      margin-top:-70px;
+      border-color:white;
+      }
+    
+
+
+.header{
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 100px;
+    
+}
+
+.logo span{
+    background-color: #3d3f3d;
+    font-size:40px;
+    color:white;
+    border-radius:100%;
+    margin-left:5px;
+}

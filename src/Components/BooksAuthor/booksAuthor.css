@@ -1,0 +1,10 @@
+.main{
+    display: flex; 
+    flex-direction: row;
+    align-content:center;
+    margin-top:40px;
+  
+    
+    
+}
+

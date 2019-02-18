@@ -1,0 +1,25 @@
+.book {
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+    padding: 10px;
+    text-align: center;
+    background-color: green;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+    width: 300px;
+  }
+
+  .heart {
+    width: 10%; 
+    float: right;
+  }
+  
+  .image {
+    width: 100%;
+  }
+
+  .container {
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:1em;
+  }

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import './BooksGrid.css';
+import './BooksGrid.css';
 import Books from '../Books/Books.component'
 
 class BooksGrid extends Component {
@@ -8,8 +8,9 @@ class BooksGrid extends Component {
         return (
             
             
-            <div>
-                <fieldset>
+            <div className="main">
+                <fieldset className="authorGrid">
+                {/* <div className="authorGrid"> */}
                     <legend align="center">{this.props.author}</legend>
                     {
                         this.props.books.map((book,index)=>{
@@ -21,7 +22,7 @@ class BooksGrid extends Component {
                             ></Books>
                         })
                     }
-
+                {/* </div> */}
                 </fieldset>
                 </div>
 

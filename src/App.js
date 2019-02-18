@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
-import Books from './Components/Books/Books.component';
+// import Books from './Components/Books/Books.component';
 
 import axios from 'axios';
 import BooksAuthor from './Components/BooksAuthor/BooksAuthor.component'
 
 
-
+import Header from './Components/Header/Header.component'
 
 class App extends Component {
     
@@ -35,8 +35,8 @@ class App extends Component {
      
     return (
         
-      <div >
-     
+      <div>
+     <Header/>
       <BooksAuthor authors={this.state.author} books={this.state.books}/>
       
       </div>
