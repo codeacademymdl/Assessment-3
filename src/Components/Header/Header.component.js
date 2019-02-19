@@ -6,15 +6,21 @@ class Header extends Component {
 
         return (
             <div className="header">
-            <div className="sideDesign"/>
-                <div>
-                    <div className="logo"><span>BS</span></div>
+                <div className="sideDesign" />
+                <div className="headerLogo">
+
+                    <div className="mainLogo">
+                        <div className="logo">
+                            <span className="logoAbv">BS</span>
+                        </div>
+                    </div>
+                    <span className="logoName"> The Book Shelf</span>
 
                 </div>
                 <div className="sideDesign"></div>
-              
+
             </div>
-            
+
         );
     }
 }
