@@ -1,12 +1,12 @@
 .book {
-    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
-    padding: 10px;
+
+   
     text-align: center;
-    background-color: green;
+    background-color:#FC9152;
     margin-left: 5%;
     margin-right: 5%;
     margin-top: 2%;
-    width: 300px;
+    width: 400px;
   }
 
   .heart {
@@ -16,10 +16,17 @@
   
   .image {
     width: 100%;
+
   }
 
+  .title {
+    font-size: 1em;
+    text-align: center;
+  }
+  
   .container {
     text-align: left;
     font-family: Arial, Helvetica, sans-serif;
     font-size:1em;
+    padding:10px;
   }

@@ -10,8 +10,9 @@ class BooksGrid extends Component {
             
             <div className="main">
                 <fieldset className="authorGrid">
-                {/* <div className="authorGrid"> */}
+                
                     <legend align="center">{this.props.author}</legend>
+                    <div className="innerDiv">
                     {
                         this.props.books.map((book,index)=>{
                             return <Books
@@ -22,7 +23,7 @@ class BooksGrid extends Component {
                             ></Books>
                         })
                     }
-                {/* </div> */}
+                </div>
                 </fieldset>
                 </div>
 

@@ -11,18 +11,18 @@ class BooksAuthor extends Component {
 
 
 
-            <div clasName="main">
-            {
-              this.props.authors.map((author, index) => {
-                return <BooksGrid
-                books={this.props.books[author]} 
-                author={author}                
-                key={index}
-                ></BooksGrid>
-              })
-            }
-          </div>
-            
+            <div clasName="authorDiv">
+                {
+                    this.props.authors.map((author, index) => {
+                        return <BooksGrid
+                            books={this.props.books[author]}
+                            author={author}
+                        // key={index}
+                        ></BooksGrid>
+                    })
+                }
+            </div>
+
         );
     }
 }

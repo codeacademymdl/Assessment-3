@@ -6,13 +6,13 @@ import RedHeartImage from '../../Icons/heart-red.svg';
 class Books extends Component {
 
 
-state={
-    isLike:true,
-}
-    likeDislike = () =>{
+    state = {
+        isLike: true,
+    }
+    likeDislike = () => {
 
         this.setState({
-            isLike:!this.state.isLike
+            isLike: !this.state.isLike
         })
 
     }
@@ -20,15 +20,15 @@ state={
     render() {
 
         return (
-            <div className="book"> 
-                <img src= {this.props.imageSrc} alt="book" className='image' />
-                <div className="container">                    
-                    
-                    <p className='title'>{this.props.Name}</p>                                      
-                    
+            <div className="book">
+                <img src={this.props.imageSrc} alt="book" className='image' />
+                <div className="container">
+
+                    <p className='title'>{this.props.Name}</p>
+
                     <span>{this.props.rating}</span>
-                    
-                    <img alt="" className="heart" src={this.getImage()} onClick={this.likeDislike}/>
+
+                    <img alt="" className="heart" src={this.getImage()} onClick={this.likeDislike} />
                 </div>
             </div>
         );

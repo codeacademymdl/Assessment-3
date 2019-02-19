@@ -13,9 +13,6 @@ class Header extends Component {
                 </div>
                 <div className="sideDesign"></div>
               
-                
-                
-
             </div>
             
         );
