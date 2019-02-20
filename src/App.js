@@ -14,7 +14,8 @@ class App extends Component {
 
     state = {
         books: [],
-        author:[]
+        author:[],
+        count:0,
     }
 
     async componentDidMount() {
@@ -23,25 +24,31 @@ class App extends Component {
         
         this.setState({
             books: booksFetched.data,
-            author:Object.keys(booksFetched.data)
+            author: Object.keys(booksFetched.data)
 
         })
         console.log(this.state)
 
     }
+    ReRender =()=>{
+        this.setState({
+            count:this.state.count+1,
+        })
+        
+
+    }
 
 
   render() {
-     
+    console.log(this.state.count)
+
     return (
         
-      <div>
-     <Header/>
+      <div key={this.state.count}>
+     <Header click={this.ReRender}/>
      
      <BooksAuthor authors={this.state.author} books={this.state.books}/>
-     
-      
-      
+                 
       </div>
     );
   }

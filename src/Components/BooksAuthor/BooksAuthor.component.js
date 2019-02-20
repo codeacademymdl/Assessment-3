@@ -17,7 +17,7 @@ class BooksAuthor extends Component {
                         return <BooksGrid
                             books={this.props.books[author]}
                             author={author}
-                        // key={index}
+                        
                         ></BooksGrid>
                     })
                 }
