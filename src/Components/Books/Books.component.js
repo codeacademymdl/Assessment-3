@@ -17,10 +17,13 @@ class Books extends Component {
 
     }
     getImage = () => this.state.isLike ? BlackHeartImage : RedHeartImage;
+    cardColor= ()=>this.props.colorIndex%2===0 ?"#FC9152":"white"
+        
+     
     render() {
 
         return (
-            <div className="book">
+            <div className="book" style={{backgroundColor:this.cardColor()}} >
                 <img src={this.props.imageSrc} alt="book" className='image' />
                 <div className="container">
 

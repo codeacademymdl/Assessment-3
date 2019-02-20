@@ -19,6 +19,7 @@ class BooksGrid extends Component {
                             Name={book.Name}
                             rating={book.rating}
                             imageSrc = {`./cover_image.jpeg`}
+                            colorIndex={index}
                             
                             ></Books>
                         })

@@ -1,14 +1,14 @@
 .book {
 
-   
     text-align: center;
-    background-color:#FC9152;
+    /* background-color:#FC9152; */
     /* margin-left: 3%;
     margin-right: 3%; */
     
     width: 500px;
     margin:auto;
     margin-top: 2%;
+    height:750px;
   }
 
   .heart {
